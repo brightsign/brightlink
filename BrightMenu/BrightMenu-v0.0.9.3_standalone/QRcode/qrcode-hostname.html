@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>QR-Join</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  	<script src="jquery.min.js"></script>
+<script src="qrcode.js"></script>
+<link href="qrcode-styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="qr-wrap">
+		<svg viewBox="0 0 80 80"><g id="qrcode"></g></svg>
+    </div>
+	<script type="text/javascript">
+		function makeJoinCode()
+		{
+			console.log("getUserVars");
+			sUrl="http://localhost:8008/GetUserVars";
+			$.get(sUrl,function(data,status,jqXHR)
+			{ 
+				un=jqXHR.responseText;
+				xmlDoc = $.parseXML( un );
+				$xml = $( xmlDoc );
+				console.log(un);
+				console.log("fetching variables...");
+				var h = ($xml.find('BrightSignVar[name="hostname"]').text());
+				console.log(h);
+        h = validateHttp(h);
+				var qrText = h;
+				console.log(qrText);
+				var qrcode = new QRCode(document.getElementById("qrcode"), 
+				{
+					width : 400,
+					height : 400,
+					useSVG: true
+				});
+				qrcode.makeCode(qrText);
+			});
+		};
+
+    function validateHttp(url) {
+      url = url.toLowerCase();
+      if (url.includes('http:')) {
+        return url.replace('http:', 'https:')
+      } else if (!url.includes('https')) {
+        return 'https://' + url;
+      }
+      return url;
+    }
+
+		makeJoinCode();
+
+
+	</script>
+
+</body>
+</html>

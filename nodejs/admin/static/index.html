@@ -1,0 +1,376 @@
+<!doctype html>
+<html>
+<head>
+  <!-- /static source files are hosted on /dependencies/filename from captive portal http server -->
+  <script src="/static/qrcode.js"></script>
+  <script src="/static/qrious.min.js"></script>
+  <script src="/static/jquery-3.5.0.min.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+	
+	@font-face {
+  font-family: "openSans";
+  src: url("fonts/OpenSans-Regular.ttf");
+}
+	
+	@font-face {
+  font-family:"openSans";
+  src: url("fonts/OpenSans-Bold.ttf");
+  font-weight: bold;
+}
+	
+  body{
+    font-family: "openSans";
+    font-size: 16pt;
+  }
+  #wrapper {
+    margin: 0 auto;
+    padding: 12px;
+  }
+  #header {
+    margin: 0 0 23px 0;
+    text-align:center;
+  text-decoration: underline;
+  }
+  .formcontainer, .formcontainer-even{
+    padding: 12px 10px;
+ border-bottom: #333 solid thin;
+  }
+
+.formcontainer-even{ background: #d0d3d4;}
+  input {
+    height: 24px;
+  }
+
+.title {font-size: 18px; font-weight:bold;}
+
+  @media (max-width:600px) {
+    input[type="checkbox"]{
+      width: 24px;
+      height: 24px;
+    }
+    input[type="file"], input[type="submit"], input[type="text"]{
+      margin: 8px 0 8px 0;
+      height: 64px;
+      width: 100%;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      border-radius: 16px;
+      background-color:#528BFF;
+    }
+    input[type="file"] {
+      height: 32px;
+      font-size: 14pt;
+      background-color: white;
+      border-radius: 0;
+    }
+    input[type="submit"] {
+      margin: 8px 0 32px 0;
+      font-size: 16pt;
+      box-shadow: 2px 2px 8px #999;
+      border-color: none;
+    }
+    input[type="text"] {
+      background-color: white;
+      font-size: 16pt;
+      border-radius: 4px;
+      height: 48px;
+      width: 95%;
+    }
+
+#pics {background: #d0d3d4;}
+    .checkWrap {
+      margin: 6px 0 0 0;
+    }
+    .content {
+      padding: 0 18px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      background-color: #f1f1f1;
+    }
+    .bs_input{
+      height: 48px;
+      width: 95%;
+      color: rgba(0,0,0,1);
+      background-color: white;
+      border-radius: 0px;
+    }
+    #qrcode img {
+      width: 90vw;
+      z-index: 1000;
+    }
+  }
+</style>
+</head>
+<!-- <script src="../dist/admin.js"></script> -->
+
+<body>
+<div style="height: 20px; background: #311c6f">&nbsp;</div>
+  <div id="wrapper">
+    <div id="header">Admin Page</div>
+
+    <div class="formcontainer">
+      <form id="checkboxForm" action='/update' method="post">
+        <div>
+          <div id="checkboxes">Selected Image:</div>
+        </div>
+        <div id="responseDiv"></div>
+        <input type="submit" value="Choose Image"/>
+      </form>
+    </div>
+
+    <div class="formcontainer-even">
+      <form action='/submit' method='post' enctype='multipart/form-data' onsubmit='return validateInputFileForm();'>
+        <div>
+          <div class="title">Upload Image:</div>
+          <input id="pics" type="file" multiple=" " name="pics"/>
+        </div>
+        <input type="submit" value="Upload"/>
+      </form>
+    </div>
+<div class="title">Network Information </div>
+    <div class="varform formcontainer">
+</div>
+
+    <a name="password" id="password"></a>
+    <div class="formcontainer-even">
+      <form id='updatePasswordForm' action='/updatepassword' method='post' onsubmit='return validatePasswordInput();'>
+        <div>
+          <div class="title">Update Admin Password:</div>
+          <input id="enterPasswordText" type="text" class="bs_input" name="password" placeholder="Enter New Password"/></br>
+          <input id="reenterPasswordText" type="text" class="bs_input" name="secondpassword" placeholder="Re-enter New Password"/>
+        </div>
+        <input type="submit" value="Update Password"/>
+      </form>
+    </div>
+
+    <div class="qr_instructions">QR Code:</div>
+    <div class="qr_instructions">Press and hold to "Save Image"</div>
+    <div id="qrcode" style="width:90vw;"></div>
+  </div>
+</body>
+
+<script>
+  // Load checkboxes
+  $(document).ready(function() {
+    $.ajax({url: '/allUploads', type: "GET", contentType: "application/json", dataType: "json", cross_domain:true })
+    .done(function (res) {
+        $.each(res.files, function (i, v) {
+          var checkBoxHtml = '';
+          if (v.checked) {
+            checkBoxHtml = `</br><div class="checkWrap"><label for="${v.filename}"><input type="checkbox" name="${v.filename}" id="${v.filename}" onclick='handleMenuCheckbox(this);' value=${v.checked} checked/> ${v.filename} </label><button type="button" id="${v.filename}-delete" value='${v.filename}' onclick='doDeleteFile(this);'>Delete</button></div>`;
+          } else {
+            checkBoxHtml = `</br><div class="checkWrap"><label for="${v.filename}"><input type="checkbox" name="${v.filename}" id="${v.filename}" onclick='handleMenuCheckbox(this);' value=${v.checked} /> ${v.filename} </label><button type="button" id="${v.filename}-delete" value='${v.filename}' onclick='doDeleteFile(this);'>Delete</button></div>`;
+          }
+
+          $('#checkboxes').append(checkBoxHtml);       
+        })
+    })
+
+    makeHostnameQrCode();
+    getUserVars(doUserVars);
+  })
+
+  // Handle checkbox form submission
+  $(`#checkboxForm`).on('submit', function(e) {
+    var form = $( this ), // this will resolve to the form submitted
+       action = form.attr( 'action' ),
+         type = form.attr( 'method' ),
+         data = {};
+
+     // Make sure you use the 'name' field on the inputs you want to grab. 
+    form.find( '[name]' ).each( function( i , v ){
+      var input = $( this ), // resolves to current input element.
+          name = input.attr( 'name' ),
+          value = input.val();
+      data[name] = stringToBoolean(value);
+    });
+
+    e.preventDefault();
+    sendRequest(action, type, data);
+  })
+
+  // Toggle checkbox
+  function handleMenuCheckbox(e) {
+    var ele = document.getElementById(e.id);
+    ele.value = ele.checked;
+  } 
+
+  function sendRequest(action, type, data) {
+      $.ajax({
+          url: action,
+          type: type,
+          data: data
+      })
+      .done(function() {
+          $( "#responseDiv" ).html("Success!");
+          responseTimer();
+      })
+      .fail(function() {
+          $( "#responseDiv" ).html( "Failed to complete action." );
+          responseTimer();
+      });
+  }
+
+  function responseTimer() {
+    setTimeout(function() {
+      document.getElementById("responseDiv").textContent = '';
+    }, 5000);
+  }
+
+  // Create hostname qr code from user variables
+  function makeHostnameQrCode()
+  {
+    console.log("getUserVars");
+    sUrl="/GetUserVars";
+    $.get(sUrl,function(data,status,jqXHR)
+    { 
+      un=jqXHR.responseText;
+      xmlDoc = $.parseXML( un );
+      $xml = $( xmlDoc );
+      console.log(un);
+      console.log("fetching variables...");
+      var h = ($xml.find('BrightSignVar[name="hostname"]').text());
+      console.log(h);
+      h = validateHttp(h);
+      var qrText = h;
+      console.log(qrText);
+
+      var qr = new QRious({
+        value: qrText,
+        size: 400,
+        level: 'H'
+      });
+      var img = document.createElement('img');
+      img.setAttribute('src', qr.toDataURL());
+      img.setAttribute('alt', "QR Code to scan!");
+      document.getElementById("qrcode").appendChild(img);
+    });
+  };
+ 
+  // Retrieve the user vars from local web server
+  function getUserVars(callback)
+  {
+    console.log("getUserVars");
+    sUrl="/GetUserVars";
+    var varlist=new Array();
+    $.get(sUrl,function(data,status,jqXHR)
+    { 
+      un=jqXHR.responseText;
+      xmlDoc = $.parseXML( un );
+      $xml = $( xmlDoc );
+      console.log("fetching variables...")
+      $xml.find('BrightSignVar').each(function(){
+          var name=$(this).attr('name');
+          var val=$(this).text();
+          uv=new userVar(name,val);
+          printObj(uv);
+          varlist.push(uv);
+      });
+      callback(varlist);
+    });
+  }
+
+  // Create user variable input fields
+  function doUserVars(us)
+  {
+    printObj(us)
+
+    if(typeof us === 'undefined')
+    {
+      console.log("userVars not defined");
+        setTimeout(function(){getUserVars(doUserVars)},1000);
+      return;
+    }
+
+    var str='<form action="/SetValues" method="post" id="varform" onsubmit="return validateVarForm()">';
+    $.each(us,function(){
+      if (this.key === "hostname" || this.key === "ssid") {
+        str+=this.key+':<br/><input class="bs_input" type="text" name="'+this.key+'" value="'+this.value+'"/><br/>';
+      }      
+    });
+    str+='<input id="button"  type="submit" value="Set Values"/></form>';
+    $('div.varform').html(str);
+  }
+
+  function doDeleteFile(e) {
+
+    sUrl="/deletefile?filename=" + encodeURIComponent(e.value);
+    $.post(sUrl, function(data,status,jqXHR)
+    { 
+      console.log('response from /deleteFile');
+      location.reload();
+    });
+  }
+
+  function validateInputFileForm() {
+    var ele = document.getElementById("pics");
+    var ext = ele.value.match(/\.([^\.]+)$/)[1];
+    switch (ext) {
+      case 'jpg':
+      case 'png':
+      case 'jpeg':
+        break;
+      default:
+        alert('File type not supported. Only .png, .jpg, and .jpeg format allowed.');
+        this.value = '';
+        return false;
+    }
+  }
+
+  function validateVarForm() {
+    var x = document.forms["varform"]["hostname"].value;
+
+    if (!x.includes('.')) {
+      alert("Hostname must include a period, i.e., .com, .biz, .menu");
+      return false;
+    }
+
+    document.forms["varform"]["hostname"].value = validateHttp(x);
+  }
+
+  function validatePasswordInput() {
+    var p = encodeURIComponent(document.forms["updatePasswordForm"]["password"].value);
+    var sp = encodeURIComponent(document.forms["updatePasswordForm"]["secondpassword"].value);
+
+    if (p !== sp) {
+      alert("Passwords must match.");
+      return false;
+    }
+
+    document.forms["updatePasswordForm"]["password"].value = p; // update value with encodedURIComponent
+  }
+
+  function printObj(obj)
+  {
+      console.log(JSON.stringify(obj));
+  }
+
+  function userVar(key,value)
+  {
+      this.key=key;
+      this.value=value;
+  }
+
+  function validateHttp(url) {
+    url = url.toLowerCase();
+    if (url.includes('https')) {
+      return url.replace('https', 'http')
+    } else if (!url.includes('http')) {
+      return 'http://' + url;
+    }
+    return url;
+  }
+
+  function stringToBoolean(str) {
+    switch(str.toLowerCase().trim()){
+        case "true": case "yes": case "1": return true;
+        case "false": case "no": case "0": case null: return false;
+        default: return Boolean(string);
+    }
+  }
+
+</script>
+</html>

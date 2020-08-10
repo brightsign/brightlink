@@ -1,0 +1,19 @@
+{
+  "name": "BrightLink",
+  "version": "1.0.0",
+  "description": "Gesture based navigation for BrightSign",
+  "main": "brightlink-gesture.js",
+  "scripts": {
+    "test": "jest",
+    "testreport": "jest --coverage"
+  },
+  "keywords": [
+    "javascript",
+    "jest"
+  ],
+  "author": "miyer",
+  "license": "BrightSign",
+  "devDependencies": {
+    "jest": "^26.0.1"
+  }
+}

@@ -1,0 +1,1131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BrightAuthor version="6" BrightAuthorVersion="4.7.2.18" type="project">
+  <meta>
+    <name>BrightLink-Basic-WifiName-standalone</name>
+    <isBackup>False</isBackup>
+    <model>XD1034</model>
+    <videoMode>1920x1080x60p</videoMode>
+    <monitorOrientation>Landscape</monitorOrientation>
+    <videoConnector>HDMI</videoConnector>
+    <deviceWebPageDisplay>Custom</deviceWebPageDisplay>
+    <customDeviceWebPageSiteName>Products</customDeviceWebPageSiteName>
+    <customDeviceWebPage>D:\brightmenulink_bs\bs-bright-menu-link\brightlink\BrightLink-BigBoxMedia-v.0.0.9.3_internet\Products-customDeviceWebPage\product-index.html</customDeviceWebPage>
+    <alphabetizeVariableNames>True</alphabetizeVariableNames>
+    <delayScheduleChangeUntilMediaEndEvent>False</delayScheduleChangeUntilMediaEndEvent>
+    <htmlEnableJavascriptConsole>True</htmlEnableJavascriptConsole>
+    <backgroundScreenColor a="255" r="255" g="255" b="255" />
+    <forceResolution>True</forceResolution>
+    <dolbyVision>False</dolbyVision>
+    <fullResGraphicsEnabled>False</fullResGraphicsEnabled>
+    <tenBitColorEnabled>False</tenBitColorEnabled>
+    <monitorOverscan>noOverscan</monitorOverscan>
+    <gpio0>input</gpio0>
+    <gpio1>input</gpio1>
+    <gpio2>input</gpio2>
+    <gpio3>input</gpio3>
+    <gpio4>input</gpio4>
+    <gpio5>input</gpio5>
+    <gpio6>input</gpio6>
+    <gpio7>input</gpio7>
+    <BP900AConfigureAutomatically>True</BP900AConfigureAutomatically>
+    <BP900BConfigureAutomatically>True</BP900BConfigureAutomatically>
+    <BP900CConfigureAutomatically>True</BP900CConfigureAutomatically>
+    <BP900DConfigureAutomatically>True</BP900DConfigureAutomatically>
+    <BP200AConfigureAutomatically>True</BP200AConfigureAutomatically>
+    <BP200BConfigureAutomatically>True</BP200BConfigureAutomatically>
+    <BP200CConfigureAutomatically>True</BP200CConfigureAutomatically>
+    <BP200DConfigureAutomatically>True</BP200DConfigureAutomatically>
+    <BP900AConfiguration>0</BP900AConfiguration>
+    <BP900BConfiguration>0</BP900BConfiguration>
+    <BP900CConfiguration>0</BP900CConfiguration>
+    <BP900DConfiguration>0</BP900DConfiguration>
+    <BP200AConfiguration>0</BP200AConfiguration>
+    <BP200BConfiguration>0</BP200BConfiguration>
+    <BP200CConfiguration>0</BP200CConfiguration>
+    <BP200DConfiguration>0</BP200DConfiguration>
+    <SerialPortConfiguration>
+      <port>0</port>
+      <baudRate>115200</baudRate>
+      <dataBits>8</dataBits>
+      <parity>N</parity>
+      <stopBits>1</stopBits>
+      <protocol>ASCII</protocol>
+      <sendEol>CR</sendEol>
+      <receiveEol>CR</receiveEol>
+      <invertSignals>False</invertSignals>
+      <connectedDevice>None</connectedDevice>
+    </SerialPortConfiguration>
+    <SerialPortConfiguration>
+      <port>1</port>
+      <baudRate>115200</baudRate>
+      <dataBits>8</dataBits>
+      <parity>N</parity>
+      <stopBits>1</stopBits>
+      <protocol>ASCII</protocol>
+      <sendEol>CR</sendEol>
+      <receiveEol>CR</receiveEol>
+      <invertSignals>False</invertSignals>
+      <connectedDevice>None</connectedDevice>
+    </SerialPortConfiguration>
+    <SerialPortConfiguration>
+      <port>2</port>
+      <baudRate>115200</baudRate>
+      <dataBits>8</dataBits>
+      <parity>N</parity>
+      <stopBits>1</stopBits>
+      <protocol>ASCII</protocol>
+      <sendEol>CR</sendEol>
+      <receiveEol>CR</receiveEol>
+      <invertSignals>False</invertSignals>
+      <connectedDevice>None</connectedDevice>
+    </SerialPortConfiguration>
+    <SerialPortConfiguration>
+      <port>3</port>
+      <baudRate>115200</baudRate>
+      <dataBits>8</dataBits>
+      <parity>N</parity>
+      <stopBits>1</stopBits>
+      <protocol>ASCII</protocol>
+      <sendEol>CR</sendEol>
+      <receiveEol>CR</receiveEol>
+      <invertSignals>False</invertSignals>
+      <connectedDevice>None</connectedDevice>
+    </SerialPortConfiguration>
+    <SerialPortConfiguration>
+      <port>4</port>
+      <baudRate>115200</baudRate>
+      <dataBits>8</dataBits>
+      <parity>N</parity>
+      <stopBits>1</stopBits>
+      <protocol>ASCII</protocol>
+      <sendEol>CR</sendEol>
+      <receiveEol>CR</receiveEol>
+      <invertSignals>False</invertSignals>
+      <connectedDevice>None</connectedDevice>
+    </SerialPortConfiguration>
+    <SerialPortConfiguration>
+      <port>5</port>
+      <baudRate>115200</baudRate>
+      <dataBits>8</dataBits>
+      <parity>N</parity>
+      <stopBits>1</stopBits>
+      <protocol>ASCII</protocol>
+      <sendEol>CR</sendEol>
+      <receiveEol>CR</receiveEol>
+      <invertSignals>False</invertSignals>
+      <connectedDevice>None</connectedDevice>
+    </SerialPortConfiguration>
+    <SerialPortConfiguration>
+      <port>6</port>
+      <baudRate>115200</baudRate>
+      <dataBits>8</dataBits>
+      <parity>N</parity>
+      <stopBits>1</stopBits>
+      <protocol>ASCII</protocol>
+      <sendEol>CR</sendEol>
+      <receiveEol>CR</receiveEol>
+      <invertSignals>False</invertSignals>
+      <connectedDevice>None</connectedDevice>
+    </SerialPortConfiguration>
+    <SerialPortConfiguration>
+      <port>7</port>
+      <baudRate>115200</baudRate>
+      <dataBits>8</dataBits>
+      <parity>N</parity>
+      <stopBits>1</stopBits>
+      <protocol>ASCII</protocol>
+      <sendEol>CR</sendEol>
+      <receiveEol>CR</receiveEol>
+      <invertSignals>False</invertSignals>
+      <connectedDevice>None</connectedDevice>
+    </SerialPortConfiguration>
+    <udpDestinationAddressType>IPAddress</udpDestinationAddressType>
+    <udpDestinationAddress>127.0.0.1</udpDestinationAddress>
+    <udpDestinationPort>5000</udpDestinationPort>
+    <udpReceiverPort>5000</udpReceiverPort>
+    <flipCoordinates>false</flipCoordinates>
+    <touchCursorDisplayMode>hide</touchCursorDisplayMode>
+    <language>English</language>
+    <languageKey>eng</languageKey>
+    <audioConfiguration>MixedAudioPCMOnly</audioConfiguration>
+    <audioAutoLevel>False</audioAutoLevel>
+    <audio1MinVolume>0</audio1MinVolume>
+    <audio1MaxVolume>100</audio1MaxVolume>
+    <audio2MinVolume>0</audio2MinVolume>
+    <audio2MaxVolume>100</audio2MaxVolume>
+    <audio3MinVolume>0</audio3MinVolume>
+    <audio3MaxVolume>100</audio3MaxVolume>
+    <usbAMinVolume>0</usbAMinVolume>
+    <usbAMaxVolume>100</usbAMaxVolume>
+    <usbBMinVolume>0</usbBMinVolume>
+    <usbBMaxVolume>100</usbBMaxVolume>
+    <usbCMinVolume>0</usbCMinVolume>
+    <usbCMaxVolume>100</usbCMaxVolume>
+    <usbDMinVolume>0</usbDMinVolume>
+    <usbDMaxVolume>100</usbDMaxVolume>
+    <usbTypeAMinVolume>0</usbTypeAMinVolume>
+    <usbTypeAMaxVolume>100</usbTypeAMaxVolume>
+    <usbTypeCMinVolume>0</usbTypeCMinVolume>
+    <usbTypeCMaxVolume>100</usbTypeCMaxVolume>
+    <usb700_1MinVolume>0</usb700_1MinVolume>
+    <usb700_1MaxVolume>100</usb700_1MaxVolume>
+    <usb700_2MinVolume>0</usb700_2MinVolume>
+    <usb700_2MaxVolume>100</usb700_2MaxVolume>
+    <usb700_3MinVolume>0</usb700_3MinVolume>
+    <usb700_3MaxVolume>100</usb700_3MaxVolume>
+    <usb700_4MinVolume>0</usb700_4MinVolume>
+    <usb700_4MaxVolume>100</usb700_4MaxVolume>
+    <usb700_5MinVolume>0</usb700_5MinVolume>
+    <usb700_5MaxVolume>100</usb700_5MaxVolume>
+    <usb700_6MinVolume>0</usb700_6MinVolume>
+    <usb700_6MaxVolume>100</usb700_6MaxVolume>
+    <usb700_7MinVolume>0</usb700_7MinVolume>
+    <usb700_7MaxVolume>100</usb700_7MaxVolume>
+    <hdmiMinVolume>0</hdmiMinVolume>
+    <hdmiMaxVolume>100</hdmiMaxVolume>
+    <spdifMinVolume>0</spdifMinVolume>
+    <spdifMaxVolume>100</spdifMaxVolume>
+    <mediaListInactivityTimeoutIsGlobal>False</mediaListInactivityTimeoutIsGlobal>
+    <inactivityTimeout>False</inactivityTimeout>
+    <inactivityTime>30</inactivityTime>
+    <autoCreateMediaCounterVariables>False</autoCreateMediaCounterVariables>
+    <resetVariablesOnPresentationStart>False</resetVariablesOnPresentationStart>
+    <networkedVariablesUpdateInterval>300</networkedVariablesUpdateInterval>
+    <userDefinedEvents>
+    </userDefinedEvents>
+    <userVariables>
+      <userVariable>
+        <name>product-selected</name>
+        <defaultValue />
+        <networked>False</networked>
+        <liveDataFeedName />
+        <systemVariable />
+        <access>Private</access>
+      </userVariable>
+      <userVariable>
+        <name>connect-status</name>
+        <defaultValue>disconnected</defaultValue>
+        <networked>False</networked>
+        <liveDataFeedName />
+        <systemVariable />
+        <access>Private</access>
+      </userVariable>
+      <userVariable>
+        <name>ssid</name>
+        <defaultValue>BrightLink</defaultValue>
+        <networked>False</networked>
+        <liveDataFeedName />
+        <systemVariable />
+        <access>Private</access>
+      </userVariable>
+      <userVariable>
+        <name>password</name>
+        <defaultValue />
+        <networked>False</networked>
+        <liveDataFeedName />
+        <systemVariable />
+        <access>Private</access>
+      </userVariable>
+      <userVariable>
+        <name>hostname</name>
+        <defaultValue>WATCH.NOW</defaultValue>
+        <networked>False</networked>
+        <liveDataFeedName />
+        <systemVariable />
+        <access>Private</access>
+      </userVariable>
+      <userVariable>
+        <name>ipstart</name>
+        <defaultValue>192.168.10.2</defaultValue>
+        <networked>False</networked>
+        <liveDataFeedName />
+        <systemVariable />
+        <access>Private</access>
+      </userVariable>
+      <userVariable>
+        <name>ipend</name>
+        <defaultValue>192.168.10.10</defaultValue>
+        <networked>False</networked>
+        <liveDataFeedName />
+        <systemVariable />
+        <access>Private</access>
+      </userVariable>
+      <userVariable>
+        <name>gatewayaddress</name>
+        <defaultValue>192.168.10.1</defaultValue>
+        <networked>False</networked>
+        <liveDataFeedName />
+        <systemVariable />
+        <access>Private</access>
+      </userVariable>
+      <userVariable>
+        <name>ipaddress</name>
+        <defaultValue>192.168.10.200</defaultValue>
+        <networked>False</networked>
+        <liveDataFeedName />
+        <systemVariable />
+        <access>Private</access>
+      </userVariable>
+      <userVariable>
+        <name>frequency</name>
+        <defaultValue>2412</defaultValue>
+        <networked>False</networked>
+        <liveDataFeedName />
+        <systemVariable />
+        <access>Private</access>
+      </userVariable>
+    </userVariables>
+    <liveDataFeeds>
+    </liveDataFeeds>
+    <scriptPlugins>
+      <scriptPlugin>
+        <name>httpServer</name>
+        <path>D:\brightmenulink_bs\bs-bright-menu-link\brightlink\BrightLink-BigBoxMedia-v.0.0.9.3_standalone\httpServer-npm-auto_v3_standalone.brs</path>
+      </scriptPlugin>
+      <scriptPlugin>
+        <name>Access</name>
+        <path>D:\brightmenulink_bs\bs-bright-menu-link\brightlink\BrightLink-BigBoxMedia-v.0.0.9.3_standalone\Set_Player_As_Access_Point_plugin.brs</path>
+      </scriptPlugin>
+    </scriptPlugins>
+    <videoModePlugins>
+    </videoModePlugins>
+    <parserPlugins>
+    </parserPlugins>
+    <htmlSites>
+      <localHTMLSite>
+        <name>QRcode-hostname</name>
+        <queryString>
+          <parameterValue>
+            <parameterValueItemText>
+              <value />
+            </parameterValueItemText>
+          </parameterValue>
+        </queryString>
+        <filePath>D:\brightmenulink_bs\bs-bright-menu-link\brightlink\BrightLink-BigBoxMedia-v.0.0.9.3_internet\QRcode-hostname\qrcode-hostname.html</filePath>
+      </localHTMLSite>
+    </htmlSites>
+    <presentationIdentifiers>
+    </presentationIdentifiers>
+    <beacons>
+    </beacons>
+    <additionalFileToPublish>D:\brightmenulink_bs\bs-bright-menu-link\brightlink\BrightLink-BigBoxMedia-v.0.0.9.3_standalone\npm.zip</additionalFileToPublish>
+    <DirectoryLocations>
+      <AllFiles>D:\brightmenulink_bs\bs-bright-menu-link\brightlink\BrightLink-BigBoxMedia-v.0.0.9.3_standalone</AllFiles>
+      <Image>D:\brightmenulink_bs\bs-bright-menu-link\brightlink\BrightLink-BigBoxMedia-v.0.0.9.3_internet</Image>
+      <Video>D:\brightmenulink_bs\bs-bright-menu-link\brightlink\BrightLink-BigBoxMedia-v.0.0.9.3_internet</Video>
+      <Audio>D:\brightmenulink_bs\bs-bright-menu-link\brightlink\BrightLink-BigBoxMedia-v.0.0.9.3_internet</Audio>
+      <Media>D:\brightmenulink_bs\bs-bright-menu-link\brightlink\BrightLink-BigBoxMedia-v.0.0.9.3_internet</Media>
+      <Fonts>D:\brightmenulink_bs\bs-bright-menu-link\brightlink\BrightLink-BigBoxMedia-v.0.0.9.3_internet</Fonts>
+      <HTML>D:\brightmenulink_bs\bs-bright-menu-link\brightlink\BrightLink-BigBoxMedia-v.0.0.9.3_internet</HTML>
+      <PluginScriptsAutoruns>D:\brightmenulink_bs\bs-bright-menu-link\brightlink\BrightLink-BigBoxMedia-v.0.0.9.3_standalone</PluginScriptsAutoruns>
+      <CSV>D:\brightmenulink_bs\bs-bright-menu-link\brightlink\BrightLink-BigBoxMedia-v.0.0.9.3_internet</CSV>
+      <RFChannelScan>D:\brightmenulink_bs\bs-bright-menu-link\brightlink\BrightLink-BigBoxMedia-v.0.0.9.3_internet</RFChannelScan>
+      <Schedules>D:\brightmenulink_bs\bs-bright-menu-link\brightlink\BrightLink-BigBoxMedia-v.0.0.9.3_internet</Schedules>
+      <ReplacementMedia>D:\brightmenulink_bs\bs-bright-menu-link\brightlink\BrightLink-BigBoxMedia-v.0.0.9.3_internet</ReplacementMedia>
+      <UserVariables>D:\brightmenulink_bs\bs-bright-menu-link\brightlink\BrightLink-BigBoxMedia-v.0.0.9.3_internet</UserVariables>
+      <XModemFiles>D:\brightmenulink_bs\bs-bright-menu-link\brightlink\BrightLink-BigBoxMedia-v.0.0.9.3_internet</XModemFiles>
+      <ImportCommandFiles>D:\brightmenulink_bs\bs-bright-menu-link\brightlink\BrightLink-BigBoxMedia-v.0.0.9.3_internet</ImportCommandFiles>
+    </DirectoryLocations>
+    <graphicsZOrder>Back</graphicsZOrder>
+    <isMosaic>False</isMosaic>
+  </meta>
+  <zones>
+    <zone>
+      <name>Event Handler</name>
+      <x>53</x>
+      <y>137</y>
+      <width>307</width>
+      <height>213</height>
+      <type>Images</type>
+      <id>7</id>
+      <zoomValue>1</zoomValue>
+      <horizontalOffset>0</horizontalOffset>
+      <verticalOffset>0</verticalOffset>
+      <zoneSpecificParameters>
+        <imageMode>Scale to Fit</imageMode>
+      </zoneSpecificParameters>
+      <playlist>
+        <name>Playlist 3</name>
+        <type>interactive</type>
+        <states>
+          <initialState>Start</initialState>
+          <state>
+            <name>Start</name>
+            <x>90</x>
+            <y>47</y>
+            <width>114</width>
+            <height>97</height>
+            <id>0</id>
+            <eventHandler2Item>
+              <stopPlayback>False</stopPlayback>
+            </eventHandler2Item>
+            <brightSignCmd>
+              <name>SetVariable</name>
+              <customUI>True</customUI>
+              <command>
+                <name>setVariable</name>
+                <parameter>
+                  <name>variableName</name>
+                  <uiElementName />
+                  <parameterValue>
+                    <parameterValueItemUserVariable>
+                      <userVariable>
+                        <name>product-selected</name>
+                        <defaultValue />
+                        <networked>False</networked>
+                        <liveDataFeedName />
+                        <systemVariable />
+                        <access>Private</access>
+                      </userVariable>
+                    </parameterValueItemUserVariable>
+                  </parameterValue>
+                  <itemName />
+                  <validationRule>-1</validationRule>
+                </parameter>
+                <parameter>
+                  <name>variableValue</name>
+                  <uiElementName />
+                  <parameterValue>
+                    <parameterValueItemText>
+                      <value />
+                    </parameterValueItemText>
+                  </parameterValue>
+                  <itemName />
+                  <validationRule>-1</validationRule>
+                </parameter>
+              </command>
+            </brightSignCmd>
+            <brightSignCmd>
+              <name>SetVariable</name>
+              <customUI>True</customUI>
+              <command>
+                <name>setVariable</name>
+                <parameter>
+                  <name>variableName</name>
+                  <uiElementName />
+                  <parameterValue>
+                    <parameterValueItemUserVariable>
+                      <userVariable>
+                        <name>connect-status</name>
+                        <defaultValue>disconnected</defaultValue>
+                        <networked>False</networked>
+                        <liveDataFeedName />
+                        <systemVariable />
+                        <access>Private</access>
+                      </userVariable>
+                    </parameterValueItemUserVariable>
+                  </parameterValue>
+                  <itemName />
+                  <validationRule>-1</validationRule>
+                </parameter>
+                <parameter>
+                  <name>variableValue</name>
+                  <uiElementName />
+                  <parameterValue>
+                    <parameterValueItemText>
+                      <value>disconnected</value>
+                    </parameterValueItemText>
+                  </parameterValue>
+                  <itemName />
+                  <validationRule>-1</validationRule>
+                </parameter>
+              </command>
+            </brightSignCmd>
+            <brightSignExitCommands>
+            </brightSignExitCommands>
+            <notes />
+          </state>
+          <state>
+            <name>Select Products</name>
+            <x>97</x>
+            <y>258</y>
+            <width>114</width>
+            <height>97</height>
+            <id>1</id>
+            <eventHandler2Item>
+              <stopPlayback>False</stopPlayback>
+            </eventHandler2Item>
+            <brightSignExitCommands>
+            </brightSignExitCommands>
+            <notes />
+          </state>
+          <transition>
+            <sourceMediaState>Start</sourceMediaState>
+            <userEvent>
+              <name>udp</name>
+              <parameters>
+                <parameter>connected</parameter>
+                <label>connected</label>
+                <export>False</export>
+              </parameters>
+            </userEvent>
+            <targetMediaState>Select Products</targetMediaState>
+            <remainOnCurrentStateActions>None</remainOnCurrentStateActions>
+            <displayMode>displayLabel</displayMode>
+            <labelLocation>bottom</labelLocation>
+            <brightSignCmd>
+              <name>SendZoneMessage</name>
+              <customUI>False</customUI>
+              <command>
+                <name>sendZoneMessage</name>
+                <parameter>
+                  <name>zoneMessage</name>
+                  <uiElementName>zoneMessage</uiElementName>
+                  <parameterValue>
+                    <parameterValueItemText>
+                      <value>connected</value>
+                    </parameterValueItemText>
+                  </parameterValue>
+                  <itemName />
+                  <validationRule>-1</validationRule>
+                </parameter>
+              </command>
+            </brightSignCmd>
+            <brightSignCmd>
+              <name>SetVariable</name>
+              <customUI>True</customUI>
+              <command>
+                <name>setVariable</name>
+                <parameter>
+                  <name>variableName</name>
+                  <uiElementName />
+                  <parameterValue>
+                    <parameterValueItemUserVariable>
+                      <userVariable>
+                        <name>connect-status</name>
+                        <defaultValue>disconnected</defaultValue>
+                        <networked>False</networked>
+                        <liveDataFeedName />
+                        <systemVariable />
+                        <access>Private</access>
+                      </userVariable>
+                    </parameterValueItemUserVariable>
+                  </parameterValue>
+                  <itemName />
+                  <validationRule>-1</validationRule>
+                </parameter>
+                <parameter>
+                  <name>variableValue</name>
+                  <uiElementName />
+                  <parameterValue>
+                    <parameterValueItemText>
+                      <value>connected</value>
+                    </parameterValueItemText>
+                  </parameterValue>
+                  <itemName />
+                  <validationRule>-1</validationRule>
+                </parameter>
+              </command>
+            </brightSignCmd>
+            <assignInputToUserVariable>False</assignInputToUserVariable>
+            <assignWildcardToUserVariable>False</assignWildcardToUserVariable>
+          </transition>
+          <transition>
+            <sourceMediaState>Start</sourceMediaState>
+            <userEvent>
+              <name>udp</name>
+              <parameters>
+                <parameter>product&lt;any&gt;</parameter>
+                <label>product&lt;any&gt;</label>
+                <export>False</export>
+              </parameters>
+            </userEvent>
+            <targetMediaState>Select Products</targetMediaState>
+            <remainOnCurrentStateActions>None</remainOnCurrentStateActions>
+            <displayMode>displayLabel</displayMode>
+            <labelLocation>bottom</labelLocation>
+            <brightSignCmd>
+              <name>SendZoneMessage</name>
+              <customUI>False</customUI>
+              <command>
+                <name>sendZoneMessage</name>
+                <parameter>
+                  <name>zoneMessage</name>
+                  <uiElementName>zoneMessage</uiElementName>
+                  <parameterValue>
+                    <parameterValueItemText>
+                      <value>product-selected</value>
+                    </parameterValueItemText>
+                  </parameterValue>
+                  <itemName />
+                  <validationRule>-1</validationRule>
+                </parameter>
+              </command>
+            </brightSignCmd>
+            <assignInputToUserVariable>True</assignInputToUserVariable>
+            <variableToAssign>product-selected</variableToAssign>
+            <assignWildcardToUserVariable>False</assignWildcardToUserVariable>
+          </transition>
+          <transition>
+            <sourceMediaState>Select Products</sourceMediaState>
+            <userEvent>
+              <name>udp</name>
+              <parameters>
+                <parameter>product&lt;any&gt;</parameter>
+                <label>select product</label>
+                <export>False</export>
+              </parameters>
+            </userEvent>
+            <targetMediaState>Select Products</targetMediaState>
+            <remainOnCurrentStateActions>None</remainOnCurrentStateActions>
+            <displayMode>displayLabel</displayMode>
+            <labelLocation>bottom</labelLocation>
+            <brightSignCmd>
+              <name>SendZoneMessage</name>
+              <customUI>False</customUI>
+              <command>
+                <name>sendZoneMessage</name>
+                <parameter>
+                  <name>zoneMessage</name>
+                  <uiElementName>zoneMessage</uiElementName>
+                  <parameterValue>
+                    <parameterValueItemText>
+                      <value>product-selected</value>
+                    </parameterValueItemText>
+                  </parameterValue>
+                  <itemName />
+                  <validationRule>-1</validationRule>
+                </parameter>
+              </command>
+            </brightSignCmd>
+            <assignInputToUserVariable>True</assignInputToUserVariable>
+            <variableToAssign>product-selected</variableToAssign>
+            <assignWildcardToUserVariable>False</assignWildcardToUserVariable>
+          </transition>
+          <transition>
+            <sourceMediaState>Select Products</sourceMediaState>
+            <userEvent>
+              <name>zoneMessage</name>
+              <parameters>
+                <parameter>disconnected</parameter>
+              </parameters>
+            </userEvent>
+            <targetMediaState>Start</targetMediaState>
+            <remainOnCurrentStateActions>None</remainOnCurrentStateActions>
+            <displayMode>displayLabel</displayMode>
+            <labelLocation>bottom</labelLocation>
+            <assignInputToUserVariable>False</assignInputToUserVariable>
+            <assignWildcardToUserVariable>False</assignWildcardToUserVariable>
+          </transition>
+          <transition>
+            <sourceMediaState>Select Products</sourceMediaState>
+            <userEvent>
+              <name>udp</name>
+              <parameters>
+                <parameter>reset</parameter>
+                <label>reset</label>
+                <export>False</export>
+              </parameters>
+            </userEvent>
+            <targetMediaState>Select Products</targetMediaState>
+            <remainOnCurrentStateActions>None</remainOnCurrentStateActions>
+            <displayMode>displayLabel</displayMode>
+            <labelLocation>bottom</labelLocation>
+            <brightSignCmd>
+              <name>ResetVariable</name>
+              <customUI>True</customUI>
+              <command>
+                <name>resetVariable</name>
+                <parameter>
+                  <name>variableName</name>
+                  <uiElementName />
+                  <parameterValue>
+                    <parameterValueItemUserVariable>
+                      <userVariable>
+                        <name>product-selected</name>
+                        <defaultValue />
+                        <networked>False</networked>
+                        <liveDataFeedName />
+                        <systemVariable />
+                        <access>Private</access>
+                      </userVariable>
+                    </parameterValueItemUserVariable>
+                  </parameterValue>
+                  <itemName />
+                  <validationRule>-1</validationRule>
+                </parameter>
+              </command>
+            </brightSignCmd>
+            <brightSignCmd>
+              <name>SendZoneMessage</name>
+              <customUI>False</customUI>
+              <command>
+                <name>sendZoneMessage</name>
+                <parameter>
+                  <name>zoneMessage</name>
+                  <uiElementName>zoneMessage</uiElementName>
+                  <parameterValue>
+                    <parameterValueItemText>
+                      <value>show-product-selector</value>
+                    </parameterValueItemText>
+                  </parameterValue>
+                  <itemName />
+                  <validationRule>-1</validationRule>
+                </parameter>
+              </command>
+            </brightSignCmd>
+            <assignInputToUserVariable>False</assignInputToUserVariable>
+            <assignWildcardToUserVariable>False</assignWildcardToUserVariable>
+          </transition>
+        </states>
+      </playlist>
+    </zone>
+    <zone>
+      <name>QRcode Help</name>
+      <x>1072</x>
+      <y>760</y>
+      <width>421</width>
+      <height>320</height>
+      <type>Images</type>
+      <id>9</id>
+      <zoomValue>1</zoomValue>
+      <horizontalOffset>0</horizontalOffset>
+      <verticalOffset>0</verticalOffset>
+      <zoneSpecificParameters>
+        <imageMode>Scale to Fit</imageMode>
+      </zoneSpecificParameters>
+      <playlist>
+        <name>Playlist 5</name>
+        <type>interactive</type>
+        <states>
+          <initialState>Live Text</initialState>
+          <state>
+            <name>Live Text</name>
+            <x>77</x>
+            <y>53</y>
+            <width>114</width>
+            <height>97</height>
+            <id>1</id>
+            <templatePlaylistItem>
+              <stateName>Live Text</stateName>
+              <constantTextTemplateItem>
+                <text>Use Camera &gt;</text>
+                <textWidget>
+                  <numberOfLines>1</numberOfLines>
+                  <delay>5</delay>
+                  <rotation>0</rotation>
+                  <alignment>left</alignment>
+                  <scrollingMethod>2</scrollingMethod>
+                </textWidget>
+                <widget>
+                  <foregroundTextColor a="255" r="0" g="0" b="0" />
+                  <backgroundTextColor a="255" r="0" g="0" b="0" />
+                  <fontSize>60</fontSize>
+                </widget>
+                <backgroundColorSpecified>False</backgroundColorSpecified>
+                <x>135</x>
+                <y>87</y>
+                <width>271</width>
+                <height>120</height>
+                <layer>2</layer>
+              </constantTextTemplateItem>
+              <constantTextTemplateItem>
+                <text>2</text>
+                <textWidget>
+                  <numberOfLines>1</numberOfLines>
+                  <delay>5</delay>
+                  <rotation>0</rotation>
+                  <alignment>left</alignment>
+                  <scrollingMethod>2</scrollingMethod>
+                </textWidget>
+                <widget>
+                  <foregroundTextColor a="255" r="0" g="0" b="0" />
+                  <backgroundTextColor a="255" r="0" g="0" b="0" />
+                  <fontSize>275</fontSize>
+                </widget>
+                <backgroundColorSpecified>False</backgroundColorSpecified>
+                <x>0</x>
+                <y>12</y>
+                <width>129</width>
+                <height>307</height>
+                <layer>1</layer>
+              </constantTextTemplateItem>
+            </templatePlaylistItem>
+            <brightSignExitCommands>
+            </brightSignExitCommands>
+            <notes />
+          </state>
+        </states>
+      </playlist>
+    </zone>
+    <zone>
+      <name>QRcodeControl</name>
+      <x>1504</x>
+      <y>766</y>
+      <width>256</width>
+      <height>281</height>
+      <type>Images</type>
+      <id>10</id>
+      <zoomValue>1</zoomValue>
+      <horizontalOffset>0</horizontalOffset>
+      <verticalOffset>0</verticalOffset>
+      <zoneSpecificParameters>
+        <imageMode>Scale to Fit</imageMode>
+      </zoneSpecificParameters>
+      <playlist>
+        <name>Playlist 4</name>
+        <type>non-interactive</type>
+        <html5Item>
+          <name>QRcode-hostname</name>
+          <htmlSiteName>QRcode-hostname</htmlSiteName>
+          <enableExternalData>True</enableExternalData>
+          <enableCamera>False</enableCamera>
+          <enableMouseEvents>True</enableMouseEvents>
+          <displayCursor>False</displayCursor>
+          <hwzOn>True</hwzOn>
+          <enableScrollBars>False</enableScrollBars>
+          <useUserStylesheet>False</useUserStylesheet>
+          <userStylesheet />
+          <timeOnScreen>0</timeOnScreen>
+        </html5Item>
+        <states>
+          <initialState />
+        </states>
+      </playlist>
+    </zone>
+    <zone>
+      <name>WifiName</name>
+      <x>183</x>
+      <y>760</y>
+      <width>415</width>
+      <height>320</height>
+      <type>Images</type>
+      <id>11</id>
+      <zoomValue>1</zoomValue>
+      <horizontalOffset>0</horizontalOffset>
+      <verticalOffset>0</verticalOffset>
+      <zoneSpecificParameters>
+        <imageMode>Scale to Fit</imageMode>
+      </zoneSpecificParameters>
+      <playlist>
+        <name>Playlist 6</name>
+        <type>interactive</type>
+        <states>
+          <initialState>Live Text</initialState>
+          <state>
+            <name>Live Text</name>
+            <x>90</x>
+            <y>61</y>
+            <width>114</width>
+            <height>97</height>
+            <id>0</id>
+            <templatePlaylistItem>
+              <stateName>Live Text</stateName>
+              <constantTextTemplateItem>
+                <text>Join WIFI</text>
+                <textWidget>
+                  <numberOfLines>1</numberOfLines>
+                  <delay>5</delay>
+                  <rotation>0</rotation>
+                  <alignment>left</alignment>
+                  <scrollingMethod>2</scrollingMethod>
+                </textWidget>
+                <widget>
+                  <foregroundTextColor a="255" r="0" g="0" b="0" />
+                  <backgroundTextColor a="255" r="0" g="0" b="0" />
+                  <fontSize>60</fontSize>
+                </widget>
+                <backgroundColorSpecified>False</backgroundColorSpecified>
+                <x>112</x>
+                <y>87</y>
+                <width>271</width>
+                <height>61</height>
+                <layer>3</layer>
+              </constantTextTemplateItem>
+              <userVariableTemplateItem>
+                <name>ssid</name>
+                <textWidget>
+                  <numberOfLines>1</numberOfLines>
+                  <delay>5</delay>
+                  <rotation>0</rotation>
+                  <alignment>left</alignment>
+                  <scrollingMethod>2</scrollingMethod>
+                </textWidget>
+                <widget>
+                  <foregroundTextColor a="255" r="0" g="0" b="0" />
+                  <backgroundTextColor a="255" r="0" g="0" b="0" />
+                  <fontSize>0</fontSize>
+                </widget>
+                <backgroundColorSpecified>False</backgroundColorSpecified>
+                <x>112</x>
+                <y>150</y>
+                <width>302</width>
+                <height>45</height>
+                <layer>2</layer>
+              </userVariableTemplateItem>
+              <constantTextTemplateItem>
+                <text>1</text>
+                <textWidget>
+                  <numberOfLines>1</numberOfLines>
+                  <delay>5</delay>
+                  <rotation>0</rotation>
+                  <alignment>left</alignment>
+                  <scrollingMethod>2</scrollingMethod>
+                </textWidget>
+                <widget>
+                  <foregroundTextColor a="255" r="0" g="0" b="0" />
+                  <backgroundTextColor a="255" r="0" g="0" b="0" />
+                  <fontSize>275</fontSize>
+                </widget>
+                <backgroundColorSpecified>False</backgroundColorSpecified>
+                <x>0</x>
+                <y>12</y>
+                <width>129</width>
+                <height>307</height>
+                <layer>1</layer>
+              </constantTextTemplateItem>
+            </templatePlaylistItem>
+            <brightSignExitCommands>
+            </brightSignExitCommands>
+            <notes />
+          </state>
+        </states>
+      </playlist>
+    </zone>
+    <zone>
+      <name>Live Text</name>
+      <x>532</x>
+      <y>373</y>
+      <width>1141</width>
+      <height>236</height>
+      <type>Images</type>
+      <id>12</id>
+      <zoomValue>1</zoomValue>
+      <horizontalOffset>0</horizontalOffset>
+      <verticalOffset>0</verticalOffset>
+      <zoneSpecificParameters>
+        <imageMode>Scale to Fit</imageMode>
+      </zoneSpecificParameters>
+      <playlist>
+        <name>Playlist 0</name>
+        <type>interactive</type>
+        <states>
+          <initialState>status start</initialState>
+          <state>
+            <name>status products</name>
+            <x>103</x>
+            <y>247</y>
+            <width>114</width>
+            <height>97</height>
+            <id>0</id>
+            <templatePlaylistItem>
+              <stateName>status products</stateName>
+              <constantTextTemplateItem>
+                <text>connection status:</text>
+                <textWidget>
+                  <numberOfLines>1</numberOfLines>
+                  <delay>5</delay>
+                  <rotation>0</rotation>
+                  <alignment>left</alignment>
+                  <scrollingMethod>2</scrollingMethod>
+                </textWidget>
+                <widget>
+                  <foregroundTextColor a="255" r="0" g="0" b="0" />
+                  <backgroundTextColor a="255" r="0" g="0" b="0" />
+                  <font>System</font>
+                  <fontSize>0</fontSize>
+                </widget>
+                <backgroundColorSpecified>False</backgroundColorSpecified>
+                <x>0</x>
+                <y>0</y>
+                <width>570</width>
+                <height>64</height>
+                <layer>1</layer>
+              </constantTextTemplateItem>
+              <userVariableTemplateItem>
+                <name>connect-status</name>
+                <textWidget>
+                  <numberOfLines>1</numberOfLines>
+                  <delay>5</delay>
+                  <rotation>0</rotation>
+                  <alignment>left</alignment>
+                  <scrollingMethod>2</scrollingMethod>
+                </textWidget>
+                <widget>
+                  <foregroundTextColor a="255" r="0" g="0" b="0" />
+                  <backgroundTextColor a="255" r="0" g="0" b="0" />
+                  <font>System</font>
+                  <fontSize>0</fontSize>
+                </widget>
+                <backgroundColorSpecified>False</backgroundColorSpecified>
+                <x>571</x>
+                <y>0</y>
+                <width>570</width>
+                <height>64</height>
+                <layer>2</layer>
+              </userVariableTemplateItem>
+              <constantTextTemplateItem>
+                <text>product selected:</text>
+                <textWidget>
+                  <numberOfLines>1</numberOfLines>
+                  <delay>5</delay>
+                  <rotation>0</rotation>
+                  <alignment>left</alignment>
+                  <scrollingMethod>2</scrollingMethod>
+                </textWidget>
+                <widget>
+                  <foregroundTextColor a="255" r="0" g="0" b="0" />
+                  <backgroundTextColor a="255" r="0" g="0" b="0" />
+                  <font>System</font>
+                  <fontSize>0</fontSize>
+                </widget>
+                <backgroundColorSpecified>False</backgroundColorSpecified>
+                <x>0</x>
+                <y>172</y>
+                <width>570</width>
+                <height>64</height>
+                <layer>3</layer>
+              </constantTextTemplateItem>
+              <userVariableTemplateItem>
+                <name>product-selected</name>
+                <textWidget>
+                  <numberOfLines>1</numberOfLines>
+                  <delay>5</delay>
+                  <rotation>0</rotation>
+                  <alignment>left</alignment>
+                  <scrollingMethod>2</scrollingMethod>
+                </textWidget>
+                <widget>
+                  <foregroundTextColor a="255" r="0" g="0" b="0" />
+                  <backgroundTextColor a="255" r="0" g="0" b="0" />
+                  <font>System</font>
+                  <fontSize>0</fontSize>
+                </widget>
+                <backgroundColorSpecified>False</backgroundColorSpecified>
+                <x>571</x>
+                <y>172</y>
+                <width>570</width>
+                <height>64</height>
+                <layer>4</layer>
+              </userVariableTemplateItem>
+            </templatePlaylistItem>
+            <brightSignExitCommands>
+            </brightSignExitCommands>
+            <notes />
+          </state>
+          <state>
+            <name>status start</name>
+            <x>99</x>
+            <y>37</y>
+            <width>114</width>
+            <height>97</height>
+            <id>2</id>
+            <templatePlaylistItem>
+              <stateName>status start</stateName>
+              <constantTextTemplateItem>
+                <text>connection status:</text>
+                <textWidget>
+                  <numberOfLines>1</numberOfLines>
+                  <delay>5</delay>
+                  <rotation>0</rotation>
+                  <alignment>left</alignment>
+                  <scrollingMethod>2</scrollingMethod>
+                </textWidget>
+                <widget>
+                  <foregroundTextColor a="255" r="0" g="0" b="0" />
+                  <backgroundTextColor a="255" r="0" g="0" b="0" />
+                  <font>System</font>
+                  <fontSize>0</fontSize>
+                </widget>
+                <backgroundColorSpecified>False</backgroundColorSpecified>
+                <x>0</x>
+                <y>0</y>
+                <width>570</width>
+                <height>64</height>
+                <layer>1</layer>
+              </constantTextTemplateItem>
+              <userVariableTemplateItem>
+                <name>connect-status</name>
+                <textWidget>
+                  <numberOfLines>1</numberOfLines>
+                  <delay>5</delay>
+                  <rotation>0</rotation>
+                  <alignment>left</alignment>
+                  <scrollingMethod>2</scrollingMethod>
+                </textWidget>
+                <widget>
+                  <foregroundTextColor a="255" r="0" g="0" b="0" />
+                  <backgroundTextColor a="255" r="0" g="0" b="0" />
+                  <font>System</font>
+                  <fontSize>0</fontSize>
+                </widget>
+                <backgroundColorSpecified>False</backgroundColorSpecified>
+                <x>571</x>
+                <y>0</y>
+                <width>570</width>
+                <height>64</height>
+                <layer>2</layer>
+              </userVariableTemplateItem>
+            </templatePlaylistItem>
+            <brightSignExitCommands>
+            </brightSignExitCommands>
+            <notes />
+          </state>
+          <transition>
+            <sourceMediaState>status products</sourceMediaState>
+            <userEvent>
+              <name>zoneMessage</name>
+              <parameters>
+                <parameter>product-selected</parameter>
+              </parameters>
+            </userEvent>
+            <targetMediaState>status products</targetMediaState>
+            <remainOnCurrentStateActions>None</remainOnCurrentStateActions>
+            <displayMode>displayLabel</displayMode>
+            <labelLocation>bottom</labelLocation>
+            <assignInputToUserVariable>False</assignInputToUserVariable>
+            <assignWildcardToUserVariable>False</assignWildcardToUserVariable>
+          </transition>
+          <transition>
+            <sourceMediaState>status products</sourceMediaState>
+            <userEvent>
+              <name>timeout</name>
+              <parameters>
+                <parameter>20</parameter>
+              </parameters>
+            </userEvent>
+            <targetMediaState>status start</targetMediaState>
+            <remainOnCurrentStateActions>None</remainOnCurrentStateActions>
+            <displayMode>displayLabel</displayMode>
+            <labelLocation>bottom</labelLocation>
+            <brightSignCmd>
+              <name>SendZoneMessage</name>
+              <customUI>False</customUI>
+              <command>
+                <name>sendZoneMessage</name>
+                <parameter>
+                  <name>zoneMessage</name>
+                  <uiElementName>zoneMessage</uiElementName>
+                  <parameterValue>
+                    <parameterValueItemText>
+                      <value>disconnected</value>
+                    </parameterValueItemText>
+                  </parameterValue>
+                  <itemName />
+                  <validationRule>-1</validationRule>
+                </parameter>
+              </command>
+            </brightSignCmd>
+            <assignInputToUserVariable>False</assignInputToUserVariable>
+            <assignWildcardToUserVariable>False</assignWildcardToUserVariable>
+          </transition>
+          <transition>
+            <sourceMediaState>status start</sourceMediaState>
+            <userEvent>
+              <name>zoneMessage</name>
+              <parameters>
+                <parameter>connected</parameter>
+              </parameters>
+            </userEvent>
+            <targetMediaState>status products</targetMediaState>
+            <remainOnCurrentStateActions>None</remainOnCurrentStateActions>
+            <displayMode>displayLabel</displayMode>
+            <labelLocation>bottom</labelLocation>
+            <assignInputToUserVariable>False</assignInputToUserVariable>
+            <assignWildcardToUserVariable>False</assignWildcardToUserVariable>
+          </transition>
+        </states>
+      </playlist>
+    </zone>
+  </zones>
+</BrightAuthor>

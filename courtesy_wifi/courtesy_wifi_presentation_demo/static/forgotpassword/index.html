@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+  <!-- /static source files are hosted on /dependencies/filename from captive portal http server -->
+  <script src="/static/jquery-3.5.0.min.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  body{
+    font-family: sans-serif;
+    font-size: 16pt;
+  }
+  #wrapper {
+    margin: 0 auto;
+    padding: 12px;
+  }
+  #header {
+    margin: 0 0 23px 0;
+    text-align:center;
+  }
+  .formcontainer{
+    margin: 10px 0 ;
+    padding: 12 0 12 0;
+  }
+
+  @media (max-width:600px) {
+    input[type="checkbox"]{
+      width: 24px;
+      height: 24px;
+    }
+    input[type="submit"]{
+      height: 64px;
+      width: 100%;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      border-radius: 16px;
+      background-color:#528BFF;
+      margin: 8px 0 32px 0;
+      font-size: 16pt;
+      box-shadow: 2px 2px 8px #999;
+    }
+  }
+</style>
+</head>
+<!-- <script src="../dist/admin.js"></script> -->
+
+<body>
+  <div id="wrapper">
+    <div id="header"><b>Forgot Password Instructions</b></div>
+    <div style="text-align:center;">By following these instructions, the
+      Admin page password will become <b>blank</b> (no password will be required).</div>
+    <div class="formcontainer">
+      <form id="resetPasswordForm" action='/resetdwspassword' method="post" onsubmit="return startTimer();">
+        <div>
+          <ol>
+            <li>Tap the <b>Reset Password</b> button below.</li>
+            <li>Press the <b>SVC button</b> on the front panel of your BrightSign player within 10 seconds.</li>
+            <li>This page will automatically be redirected to the <b>Admin page</b> ready for you to enter a new password.</li>
+          </ol>
+        </div>
+        <input type="submit" value="Reset Password"/>
+        <div id="responseDiv"></div>
+        <div id="countdown"></div>
+      </form>
+    </div>
+  </div>
+</body>
+<script>
+  
+  // Handle checkbox form submission
+  $(`#resetPasswordForm`).on('submit', function(e) {
+    var form = $( this ), // this will resolve to the form submitted
+       action = form.attr( 'action' ),
+         type = form.attr( 'method' ),
+         data = {};
+
+    e.preventDefault();
+    sendRequest(action, type, data);
+  })
+
+  function sendRequest(action, type, data) {
+      $.ajax({
+          url: action,
+          type: type,
+          data: data
+      })
+      .done(function() {
+          startTimer();
+      })
+      .fail(function() {
+        //   
+      });
+  }
+
+  function startTimer() {
+    var timeleft = 10;
+    var downloadTimer = setInterval(function(){
+      if(timeleft <= 0){
+        clearInterval(downloadTimer);
+        document.getElementById("countdown").innerHTML = "Finished";
+        $.ajax({url: '/ispasswordreset', type: "GET", contentType: "application/json", dataType: "json", cross_domain:true })
+        .done(function (res) {
+          if (res.isPasswordReset) {
+            window.location.pathname = "/admin";
+          }
+        });
+      } else {
+        document.getElementById("countdown").innerHTML = timeleft + " seconds remaining";
+      }
+      timeleft -= 1;
+    }, 1000);
+  }
+</script>
+</html>

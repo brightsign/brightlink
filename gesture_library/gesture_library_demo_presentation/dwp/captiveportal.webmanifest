@@ -1,0 +1,17 @@
+{
+    "name": "BrightSign Captive Portal",
+    "short_name": "Captive Portal",
+    "description": "BrightSign Captive Portal will help you interact with BS display using your mobile phone gestures without touching the display",
+    "icons": [
+        {
+            "src": "icon.png",
+            "sizes": "170x170",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "./",
+    "scope": ".",
+    "display": "fullscreen",
+    "theme_color": "#B12A34",
+    "background_color": "#B12A34"
+}

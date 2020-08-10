@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>QR-Control</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  	<script src="jquery.min.js"></script>
+<script src="qrcode.js"></script>
+<script src="fitty.min.js"></script>
+<link href="qrcode-styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="qr-wrap">
+		<svg viewBox="0 0 80 80"><g id="qrcode"></g></svg>
+		<div id="qr-text">URL Goes Here</div>
+    </div>
+
+	<script type="text/javascript">
+		function makeControlCode()
+		{
+			console.log("getUserVars");
+			sUrl="http://localhost:8008/GetUserVars";
+			$.get(sUrl,function(data,status,jqXHR)
+			{ 
+				un=jqXHR.responseText;
+				xmlDoc = $.parseXML( un );
+				$xml = $( xmlDoc );
+				console.log(un);
+				console.log("fetching variables...");
+				var s = ($xml.find('BrightSignVar[name="hostname"]').text());
+				console.log(s);
+				var qrText = "https://" + s;
+				document.getElementById("qr-text").textContent=qrText;
+				fitty('#qr-text', {minSize: 2,maxSize: 100});
+				console.log(qrText);
+				var qrcode = new QRCode(document.getElementById("qrcode"), 
+				{
+					width : 400,
+					height : 400,
+					useSVG: true
+				});
+				qrcode.makeCode(qrText);
+			});
+		};
+		makeControlCode();
+	</script>
+</body>
+</html>
