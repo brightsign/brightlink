@@ -20,14 +20,14 @@ the httpServer-npm-auto_v3.brs, Set_Player_As_Access_Point_plugin.brs, and npm.z
 
 npm.zip structure:
   /dist
-    admin.js (copied from, bs-file-upload)
+    admin.js
     portal.js
-  /static (copied from, bs-file-upload)
+  /static
     /forgotpassword
     index.html
     jquery-3.5.0.min.js
     qrcode.js
     qrious.min.js
-  adminServer.html (copied from, bs-file-upload)
+  adminServer.html
   portalServer.html
 
