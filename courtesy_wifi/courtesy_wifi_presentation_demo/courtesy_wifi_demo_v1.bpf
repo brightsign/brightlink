@@ -333,7 +333,7 @@
       <ImportCommandFiles>D:\captive\newcaptive</ImportCommandFiles>
     </DirectoryLocations>
     <graphicsZOrder>Front</graphicsZOrder>
-    <isMosaic>True</isMosaic>
+    <!-- <isMosaic>True</isMosaic> -->
   </meta>
   <zones>
     <zone>
@@ -383,7 +383,7 @@
         <saturation>64</saturation>
         <hue>0</hue>
         <zOrderFront>True</zOrderFront>
-        <mosaic>True</mosaic>
+        <!-- <mosaic>True</mosaic> -->
         <maxContentResolution>_4K</maxContentResolution>
         <imageMode>Scale to Fill</imageMode>
       </zoneSpecificParameters>
@@ -691,7 +691,7 @@
         <saturation>64</saturation>
         <hue>0</hue>
         <zOrderFront>False</zOrderFront>
-        <mosaic>True</mosaic>
+        <!-- <mosaic>True</mosaic> -->
         <maxContentResolution>_HD</maxContentResolution>
         <imageMode>Scale to Fill</imageMode>
       </zoneSpecificParameters>
