@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Products</title>
+<link href="product-styles.css" rel="stylesheet" type="text/css">
+<script src="product-scripts.js"></script>
+<script src="jquery-3.5.0.min.js"></script>
+</head>
+
+<body onload="$.post('/SendUDP', {key: 'connected'})">
+	<div class="header" onClick="removeStyles();sendUDP('reset')">Header Graphic</div>
+	<div class="item-panel">
+		<div class="item-wrap" id="item1-wrap">
+			<div class="item" id="item1" onClick="removeStyles();applyStyle(this);sendUDP('product1')">product 1</div>
+		</div>
+		<div class="item-wrap" id="item2-wrap">
+			<div class="item" id="item2" onClick="removeStyles();applyStyle(this);sendUDP('product2')">product 2</div>
+		</div>
+		<div class="item-wrap" id="item3-wrap">
+			<div class="item" id="item3" onClick="removeStyles();applyStyle(this);sendUDP('product3')">product 3</div>
+		</div>
+		<div class="item-wrap" id="item4-wrap">
+			<div class="item" id="item4" onClick="removeStyles();applyStyle(this);sendUDP('product4')">product 4</div>
+		</div>
+		<div class="item-wrap" id="item5-wrap">
+			<div class="item" id="item5" onClick="removeStyles();applyStyle(this);sendUDP('product5')">product 5</div>
+		</div>
+		<div class="item-wrap" id="item6-wrap">
+			<div class="item" id="item6" onClick="removeStyles();applyStyle(this);sendUDP('product6')">product 6</div>
+		</div>
+	</div>
+</body>
+</html>

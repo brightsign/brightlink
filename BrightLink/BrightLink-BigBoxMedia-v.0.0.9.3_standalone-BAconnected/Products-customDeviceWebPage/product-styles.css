@@ -1,0 +1,233 @@
+@charset "utf-8";
+body {
+    background-color: rgba(255,255,255,1.00);
+}
+
+
+.header {
+    background-color: #FFFFFF;
+    background-image: url(url);
+    display: block;
+}
+.item-panel {
+    width: 100%;
+}
+.item-panel .item-wrap {
+    position: relative;
+}
+.item-panel .item-wrap .item-selected {
+    border-radius: 0px;
+    border: thick inset rgba(0,63,209,1.00);
+    background-color: rgba(225,225,225,1.00);
+}
+.item-panel .item-wrap .item-title {
+    position: absolute;
+    z-index: 2;
+    left: 25%;
+    top: 65%;
+    color: rgba(0,0,0,1.00);
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+
+
+
+
+
+
+
+#item1  {
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-position: 50% 0%;
+    border-width: medium;
+    border-style: dashed;
+}
+#item2  {
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-position: 50% 0%;
+    border-width: medium;
+    border-style: dashed;
+}
+#item3  {
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-position: 50% 0%;
+    border-width: medium;
+    border-style: dashed;
+}
+#item4  {
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-position: 50% 0%;
+    border-width: medium;
+    border-style: dashed;
+}
+#item5  {
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-position: 50% 0%;
+    border-width: medium;
+    border-style: dashed;
+}
+#item6  {
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-position: 50% 0%;
+    border-width: medium;
+    border-style: dashed;
+}
+@media (min-width:576px){
+.header {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 16vw;
+    border-width: medium;
+    border-style: dashed;
+    padding-top: 0px;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 29px;
+}
+.item-panel .item-wrap {
+    height: 45vw;
+    width: 45vw;
+    -webkit-box-shadow: -4px 4px 15px rgba(0,0,0,0.13);
+    box-shadow: -4px 4px 15px rgba(0,0,0,0.13);
+    margin-left: 10px;
+    float: left;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.item-panel .item-wrap .item {
+    width: 100%;
+    height: 100%;
+    font-size: 33px;
+    text-align: center;
+}
+.item-panel .item-wrap .item-title {
+    font-size: 26px;
+}
+
+
+
+
+
+
+
+}
+
+@media (min-width:768px){
+.header {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 16vw;
+    border-width: medium;
+    border-style: dashed;
+    padding-left: 0px;
+    padding-top: 0px;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 50px;
+}
+.item-panel .item-wrap .item-title {
+    font-size: 35px;
+}
+.item-panel .item-wrap .item {
+    width: 100%;
+    height: 100%;
+    font-size: 64px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+}
+
+@media (max-width:575px){
+.header {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 16vw;
+    border-width: medium;
+    border-style: dashed;
+    padding-top: 0px;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+}
+.item-panel .item-wrap .item {
+    width: 100%;
+    height: 100%;
+    font-size: 26px;
+    text-align: center;
+}
+
+
+
+}
+@media (min-width:992px){
+.header {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 16vw;
+    border-width: medium;
+    border-style: dashed;
+    padding-top: 0px;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 63px;
+}
+.item-panel .item-wrap .item {
+    width: 100%;
+    height: 100%;
+    font-size: 69px;
+    text-align: center;
+}
+
+
+
+
+}
+
+@media (min-width:1200px){
+.header {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 16vw;
+    border-width: medium;
+    border-style: dashed;
+    padding-left: 19px;
+    padding-top: 0px;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 90px;
+}
+.item-panel .item-wrap .item {
+    width: 100%;
+    height: 100%;
+    font-size: 75px;
+    text-align: center;
+}
+
+
+
+}

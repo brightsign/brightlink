@@ -40,6 +40,10 @@ module.exports = {
       script: 'set MODULES=portal&& set PROTOCOL=https&& node scripts/build.js',
       description: 'This command will dev production build npm.zip which will enable HTTPS server for Standalone (non courtesy WiFi) BrightLink package. Run command "nps buildDevHttpsStandaloneBrightlink"'
     },
+    buildDevHttpStandaloneBrightlink: {
+      script: 'set MODULES=portal&& set PROTOCOL=http&& node scripts/build.js',
+      description: 'This command will dev production build npm.zip which will enable HTTPS server for Standalone (non courtesy WiFi) BrightLink package. Run command "nps buildDevHttpsStandaloneBrightlink"'
+    },
     buildDevHttpsInternetBrightlink: {
       script: 'set MODULES=portal&& set PROTOCOL=https&& set RDNS=true&& node scripts/build.js',
       description: 'This command will generate dev build npm.zip which will enable HTTPS server for internet (courtesy WiFi) BrightLink package using recursive DNS. Run command "nps buildDevHttpsInternetBrightlink"'
@@ -50,6 +54,10 @@ module.exports = {
     },
     buildDevCourtesywifi: {
       script: 'set MODULES=portal&& set PROTOCOL=https&& set RDNS=true&& node scripts/build.js',
+      description: 'This command will generate dev build npm.zip which will enable HTTPS server for Courtesy WiFi project. Run command "nps buildDevCourtesywifi"'
+    },
+    buildDevHttpCourtesywifi: {
+      script: 'set MODULES=portal&& set PROTOCOL=http&& set RDNS=true&& node scripts/build.js',
       description: 'This command will generate dev build npm.zip which will enable HTTPS server for Courtesy WiFi project. Run command "nps buildDevCourtesywifi"'
     },
     buildDevNoap: {
